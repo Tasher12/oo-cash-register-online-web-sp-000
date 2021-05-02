@@ -36,9 +36,4 @@ class CashRegister
     end 
   end 
 
-  def total 
-    @@total_cost << self.total 
-  end 
-  
-  
 end 
