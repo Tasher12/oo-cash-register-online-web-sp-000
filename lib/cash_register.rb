@@ -14,12 +14,9 @@ class CashRegister
     
   end
   
-  def self.all  
-    @@total_cost
-  end 
   
   def total 
-      
+    @@total_cost  
   end
   
   
