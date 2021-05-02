@@ -16,10 +16,7 @@ class CashRegister
   
   
   def add_item(title, price, quantity = 1)
-    @@total_cost.store(title, price)
-    price = quantity * price 
-    self.total += price
-  end    
+    
     
   def apply_discount
     @total -= (0.01 * @discount * @total).round(2) 
