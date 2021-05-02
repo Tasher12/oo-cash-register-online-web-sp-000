@@ -16,7 +16,7 @@ class CashRegister
   
   
   def total 
-    @@total  
+    @@total_cost  
   end
   
   
