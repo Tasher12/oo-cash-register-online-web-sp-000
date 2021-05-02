@@ -15,11 +15,6 @@ class CashRegister
   end
   
   
-  def total 
-    @@total_cost  
-  end
-  
-  
   def add_item(title, price, quantity = 1)
     @@total_cost.store(title, price)
     price = quantity * price 
