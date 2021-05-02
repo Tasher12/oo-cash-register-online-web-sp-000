@@ -21,7 +21,7 @@ class CashRegister
     
   def apply_discount
     @total -= (0.01 * @discount * @total).round(2) 
-    if discount == 0.00 
+    if discount == 0 
       puts "No discount applied."
     else 
       puts "After the discount, the total comes to $#{@total}."
