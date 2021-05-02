@@ -22,7 +22,7 @@ class CashRegister
   def apply_discount
     @total -= (0.01 * @discount * @total).round(2) 
     if discount > 0  
-      puts "After the discount, the total comes to $#{@total}."
+      "After the discount, the total comes to $#{@total}."
     end 
   end 
 
