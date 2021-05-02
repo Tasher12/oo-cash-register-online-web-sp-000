@@ -24,7 +24,7 @@ class CashRegister
     if discount == 0.00 
       puts "No discount applied."
     else 
-      puts "After the discount, the total comes to $#{@total}"
+      puts "After the discount, the total comes to $#{@total}."
     end 
   end 
 
