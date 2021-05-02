@@ -1,23 +1,20 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :item, :total, :quantity, :discount
+  attr_accessor :items, :total, :quantity, :discount
   
-  @@total_cost = Hash.new {|h,k| h[k] = []}  
+ 
   
   def initialize(discount = 0)
-    @item = [] 
+    @items = [] 
     @total = 0  
     @discount = discount  
-    @quantity = quantity 
-    
-    
   end
   
   
   def add_item(title, price, quantity = 1)
     quantity.times do 
-      @item << title 
+      @items << title 
     end 
     @total += price * quantity
     @last_total = @total 
