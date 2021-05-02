@@ -1,8 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :item, :quantity, :discount
-  attr_reader :total 
+  attr_accessor :item, :total, :quantity, :discount
   
   @@total_cost = Hash.new {|h,k| h[k] = []}  
   
