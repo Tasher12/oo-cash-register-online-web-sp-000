@@ -5,7 +5,7 @@ class CashRegister
   
   @@total_cost = Hash.new {|h,k| h[k] = []}  
   
-  def initialize(discount = 0)
+  def initialize(discount = 20)
     @item = item 
     @total = 0  
     @discount = discount  
