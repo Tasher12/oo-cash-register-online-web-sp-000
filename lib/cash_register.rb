@@ -5,7 +5,7 @@ class CashRegister
   
   @@total_cost = Hash.new {|h,k| h[k] = []}  
   
-  def initialize(discount = 20)
+  def initialize(discount = 0)
     @item = item 
     @total = 0  
     @discount = discount  
@@ -21,9 +21,7 @@ class CashRegister
     
   def apply_discount
     @total -= (0.01 * @discount * @total).round(2) 
-    if discount == 0 
-      puts "No discount applied."
-    else 
+    if discount > 0  
       puts "After the discount, the total comes to $#{@total}."
     end 
   end 
